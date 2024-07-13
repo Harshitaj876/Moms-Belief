@@ -6,7 +6,7 @@ import {Link, NavLink} from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className='flex row items-center justify-between px-10 py-[10px] bg-[#565656]/5'>
+    <div className='flex row items-center justify-between px-10 py-[10px] bg-[#565656]/5 mt-8 absolute left-0 right-0'>
       <div className='flex col items-center gap-5'>
         <HiMenuAlt1 style={{ height: '20px', width: '23px'}}/>
         <LazyLoadImage
