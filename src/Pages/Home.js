@@ -23,12 +23,12 @@ const Home = () => {
         </div>
 
       {/*Programs*/}
-        <div className='flex flex-col gap-[45px] items-center justify-center bg-[#E4F7F3] h-[944px]'>
+        <div className='flex flex-col gap-[45px] items-center justify-center bg-[#E4F7F3]'>
           <div className='flex flex-col gap-[15px] items-center justify-center'>
             <h1 className='font-Noto font-medium text-[20px] sm:text-[32px] leading-[33px] sm:leading-[55px]  h-[66px] w-[293.11px] sm:h-[58.28px] sm:w-[633px] text-center text-[#151B4A]'>Customisable Expert <span className='relative inline-block'>Curated<img src='/Assets/underline.svg' alt='' className='absolute bottom-[-5px] left-0 right-0 w-full h-auto'></img></span> Programs</h1>
             <h2 className='hidden sm:block font-normal text-[18px] leading-[27px] text-[#4E516C] h-[54px] w-[766px] text-center m-0 tracking-wide'>These programs work on applied neurological science. Our experts have curated each program with the knowledge and insights from decades of experience.</h2>
           </div>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[50px] sm:gap-[100px]'>
+          <div className='grid grid-cols-1 lg:grid-cols-3 gap-[50px] sm:gap-[100px]'>
             {data.map((item, index) => (
               <React.Fragment key={index}>
                 <Card data={item} />
@@ -52,43 +52,50 @@ const Home = () => {
         </div>
 
       {/*Expert*/}
-      <div className='flex flex-col bg-[#E4F7F3] h-[817px] items-center justify-center gap-[60px]'>
-          <div className='flex flex-col items-center justify-center gap-[15px]'>
-            <h1 className='h-[110px] w-[334px] font-Noto text-center font-medium leading-[55px] text-[32px]'>Got More Questions?Talk To Our Experts</h1>
-            <h2 className='h-[60px] w-[634px] text-center font-normal leading-[30px] text-[18px] text-[#4E516C] tracking-wide'>These programs work on applied neurological science. Our experts have curated each program with the knowledge </h2>
+      <div className='flex flex-col bg-[#E4F7F3] h-[857px] sm:h-[817px] items-center justify-center gap-[30px] sm:gap-[60px]'>
+          <div className='flex flex-col items-center gap-[15px]'>
+            <h1 className='h-[66px] w-[209px] sm:h-[110px] sm:w-[334px] font-Noto text-center font-medium leading-[33px] sm:leading-[55px] text-[20px] sm:text-[32px]'>Got More Questions?Talk To Our Experts</h1>
+            <h2 className='h-[88px] w-[276px] sm:h-[60px] sm:w-[634px] text-center font-normal leading-[22px] sm:leading-[30px] text-[16px] sm:text-[18px] text-[#4E516C] tracking-wide'>These programs work on applied neurological science. Our experts have curated each program with the knowledge </h2>
           </div>
-          <div className='w-[1023px] h-[452px] rounded-[14px] bg-[#FFFFFF] flex flex-col items-center justify-center gap-[50px]'>
-              <h1 className='font-semibold text-xl leading-[27px] tracking-wide h-[27px] w-[374px] text-[#151B4A]'>Find the best program for your child</h1>
-              <form className='flex flex-col'>
-                <div className='grid grid-cols-3 gap-5'>
+          <div className='w-[1023px] sm:h-[452px] rounded-[14px] sm:bg-[#FFFFFF] flex flex-col items-center justify-center gap-[20px] sm:gap-[50px]'>
+              <h1 className='font-semibold text-[18px] sm:text-xl leading-[27px] tracking-wide h-[54px] w-[207px] sm:h-[27px] sm:w-[374px] text-[#151B4A] text-center'>Find the best program for your child</h1>
+              <form className='flex flex-col items-center justify-center'>
+                <div className='grid grid-cols-1 sm:grid-cols-3 gap-5'>
                   <div className='flex flex-col'>
                     <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Your Name</label>
-                    <input placeholder='Enter your name' className='h-[45px] w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                    <input type='text' placeholder='Enter your name' className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
                   </div>
                   <div className='flex flex-col'>
                     <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Your Child's Name</label>
-                    <input placeholder="Enter your Child's name" className='h-[45px] w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                    <input type='text' placeholder="Enter your Child's name" className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
                   </div>
                   <div className='flex flex-col'>
                     <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Child's Age</label>
-                    <input placeholder="Enter Child's age" className='h-[45px] w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                    <input type='number' placeholder="Enter Child's age" className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
                   </div>
                 </div>
 
-                <div className='flex mt-[22px] gap-5  '>
+                <div className='flex flex-col sm:flex-row mt-[22px] gap-5  '>
                   <div className='flex flex-col'>
                     <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>E-mail id</label>
-                    <input placeholder='Enter email id' className='h-[45px] w-[622px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                    <input type='email' placeholder='Enter email id' className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[622px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
                   </div>
                   <div className='flex flex-col'>
                     <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Mobile Number</label>
-                    <input placeholder='Enter mobile no.' className='h-[45px] w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                    <div className='flex items-center'>
+                      <select className='h-[45px] w-[63px] rounded-l-[5px] text-[#4E516C] border-[1px] border-[#CAC5C5] p-[5px] flex items-center justify-center'>
+                        <option value="+1">+1</option>
+                        <option value="+91">+91</option>
+                        <option value="+44">+44</option>
+                      </select>
+                      <input type='tel' placeholder='Enter mobile no.' className='text-[#4E516C] h-[45px] w-full rounded-r-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                  </div>
                   </div>
                 </div>
               </form>
               <div className='flex flex-col gap-[10px] items-center'>
-                <Link to='/signup' className='font-semibold text-[15px] sm:text-[16px] bg-[#125E50] rounded-[60px] px-[15px] py-[6px] sm:px-[30px] sm:py-[10px] text-[#FFF] hover:bg-[#187767] w-[174px] h-[44px]'>Request a call</Link>
-                <h3 className='w-[307px] h-[24px] font-normal text-[14px] leading-6 text-[#4E516C]'>We’ll keep your information private & secure</h3>
+                <button to='/signup' className='font-semibold text-[15px] sm:text-[16px] bg-[#125E50] rounded-[60px] px-[30px] py-[10px] text-[#FFF] hover:bg-[#187767]'>Request a call</button>
+                <h3 className='w-[189px] h-[48px] sm:w-[307px] sm:h-[24px] font-normal text-[14px] leading-6 text-[#4E516C] text-center'>We’ll keep your information private & secure</h3>
               </div>
           </div>
       </div>
