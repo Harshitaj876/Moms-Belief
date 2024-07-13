@@ -38,8 +38,8 @@ const NavBar = () => {
       </div>
 
       <div className='flex row gap-[10px]'>
-        <Link to='/login' className='font-semibold text-[14px] border-[1px] border-[#125E50] rounded-[60px] px-[20px] py-[7px] text-[#125E50]'>Login</Link>
-        <Link to='/signup' className='font-semibold text-[14px] bg-[#125E50] rounded-[60px] px-[20px] py-[7px] text-[#FFF]'>Signup</Link>
+        <Link to='/login' className='font-semibold text-[14px] border-[1px] border-[#125E50] rounded-[60px] px-[20px] py-[7px] text-[#125E50] hover:bg-[#FAFFFE]'>Login</Link>
+        <Link to='/signup' className='font-semibold text-[14px] bg-[#125E50] rounded-[60px] px-[20px] py-[7px] text-[#FFF] hover:bg-[#187767]'>Signup</Link>
       </div>
     </div>
   )
