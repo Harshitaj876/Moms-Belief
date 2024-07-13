@@ -8,9 +8,9 @@ const NavBar = () => {
   return (
     <div className='flex flex-col sm:flex-row items-center justify-between px-10 py-[10px] bg-[#565656]/5 mt-0 sm:mt-8 absolute left-0 right-0'>
       <div className='flex items-center gap-5 w-full sm:w-auto'>
-        <HiMenuAlt1 style={{ height: '20px', width: '23px' }} className='sm:hidden' />
+        <HiMenuAlt1 style={{ height: '20px', width: '23px' }}  />
         <LazyLoadImage
-          src='/Assets/logo.png'
+          src='/Assets/logo.svg'
           alt='Logo'
           className='h-[36px] w-[155px] mx-auto sm:mx-0'
         />
