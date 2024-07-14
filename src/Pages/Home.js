@@ -44,7 +44,7 @@ const Home = () => {
         </div>
 
       {/*How do we work*/}
-        <div className='flex flex-col items-center justify-center gap-[70px]'>
+        <div className='flex flex-col items-center justify-center gap-[70px] '>
             <div className='flex flex-col items-center justify-center gap-[15px]'>
               <h1 className='font-Noto font-medium text-[20px] sm:text-[32px] leading-[50px] w-[136px] h-[33px] sm:w-[309px] sm:h-[50px] text-center'>
                 <span className='block sm:hidden'>Who are we?</span>
@@ -52,7 +52,11 @@ const Home = () => {
               </h1>
               <h2 className='font-normal text-base sm:text-lg sm:leading-[25px] leading-[27px] w-[303px] h-[125px] sm:w-[705px] sm:h-[54px] text-center text-[#4E516C]'> Mom’s Belief is an innovation and research-driven holistic care provider for children with Special Needs and operates through a Home-Based Program.</h2>
             </div>
-            <img src='/Assets/work.svg' alt=''></img>
+            <img src='/Assets/work.svg' alt='' className='hidden sm:block'></img>
+            <div className='block sm:hidden relative mt-[70px]' >
+              <img src='/Assets/workmobile.svg' alt='' ></img>
+              <img src='/Assets/workmobile2.svg' alt=''className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'></img>
+            </div>
         </div>
 
       {/*Expert*/}
@@ -127,7 +131,7 @@ const Home = () => {
               
           </div>
           <div className='flex row h-[276px] w-[420px] justify-between'>
-            <div className='flex flex-col justify-between'>
+            <div className='hidden sm:flex flex-col justify-between'>
               <h6 className='font-semibold text-base leading-6 text-[#151B4A]'>Company</h6>
                 {Footer_Comapny_Link.map(({name, path}, index) =>{
                     return(
@@ -141,7 +145,7 @@ const Home = () => {
                     )
                   })}
             </div>
-            <div className='flex flex-col justify-between'>
+            <div className='hidden sm:flex flex-col justify-between'>
                 <h6 className='font-semibold text-base leading-6 text-[#151B4A]'>Resources</h6>
                 {Footer_Resources_Link.map(({name, path}, index) =>{
                     return(
