@@ -16,7 +16,7 @@ const Home = () => {
   return (
       <div className='flex flex-col gap-[100px]'>
       {/*Hero Section*/}
-        <div className='flex flex-col items-center justify-center gap-7 h-[759px] bg-hero_bgmobile sm:bg-hero_bg bg-cover sm:bg-contain bg-no-repeat'>
+        <div className='flex flex-col items-center justify-center gap-7 h-[759px] bg-hero_bgmobile sm:bg-hero_bg bg-contain sm:bg-contain bg-no-repeat'>
           <img src='/Assets/headerimage1.svg' alt='' className='block absolute bottom-0 sm:bottom-6 left-10 w-[147.07px] h-[151.86px] sm:w-[297.42px] sm:h-[307.11px]'></img>
           <img src='/Assets/headerimage2.svg' alt='' className='block absolute bottom-0 sm:bottom-4 right-10 w-[82.4px] h-[117.79px] sm:w-[196.42px] sm:h-[280.79px]'></img>
           <img src='/Assets/illustration1.svg' alt='' className='hidden sm:block absolute top-32 left-[300px]'></img>
