@@ -21,7 +21,11 @@ const Home = () => {
           <img src='/Assets/illustration2.svg' alt='' className='hidden sm:block absolute top-32 right-[300px]'></img>
           <h1 className='font-Noto font-medium text-[25px] sm:text-[40px] leading-[35px] sm:leading-[60px]  h-[105px] w-[270px] sm:h-[120px] sm:w-[608px] text-center text-[#151B4A]'>We Empower Mom's Beliefs & Enable Childs's <span className='relative inline-block'>Growth.<img src='/Assets/underline.svg' alt='' className='absolute bottom-[-5px] left-0 right-0 w-full h-auto'></img></span></h1>
           <h2 className='font-normal text-[18px] sm:text-[16px] leading-[25px] sm:leading-[30px] text-[#4E516C] h-[75px] w-[324px] sm:h-[60px] sm:w-[578px] text-center m-0 tracking-wide'>We are a research-driven holistic care provider for growing children through a wide array of programs.</h2>
-          <Link to='/signup' className='font-semibold text-[15px] sm:text-[16px] bg-[#125E50] rounded-[60px] px-[15px] py-[6px] sm:px-[30px] sm:py-[10px] text-[#FFF] hover:bg-[#187767]'>Explore Programs</Link>
+          <div className='relative'>
+          <Link to='/programs' className=' font-semibold text-[15px] sm:text-[16px] bg-[#125E50] rounded-[60px] px-[15px] py-[6px] sm:px-[30px] sm:py-[10px] text-[#FFF] hover:bg-[#187767]'>Explore Programs</Link>
+          <img src='/Assets/illustration3.svg' alt='' className='absolute bottom-0 right-[-100px] hidden sm:block'></img>
+          <img src='/Assets/illustration4.svg' alt='' className='absolute bottom-0 right-[-40px] block sm:hidden'></img>
+          </div>
           <h2 className='font-normal text-[14px] sm:text-[16px] leading-[23px] sm:leading-[26px] text-[#4E516C] h-[69px] w-[254px] sm:h-[54px] sm:w-[373px] text-center'>Or Just take <a href='/assessment' className="underline">take a free assessment</a> to see how is the growth of your child.</h2>
         </div>
 
@@ -46,7 +50,7 @@ const Home = () => {
       {/*How do we work*/}
         <div className='flex flex-col items-center justify-center gap-[70px] rounded-md'>
             <div className='flex flex-col items-center justify-center gap-[15px]'>
-              <h1 className='font-Noto font-medium text-[20px] sm:text-[32px] leading-[50px] w-[136px] h-[33px] sm:w-[309px] sm:h-[50px] text-center'>
+              <h1 className='font-Noto font-medium text-[20px] sm:text-[32px] leading-[50px] w-[136px] h-[33px] sm:w-[309px] sm:h-[50px] text-center text-[#151B4A]'>
                 <span className='block sm:hidden'>Who are we?</span>
                 <span className='hidden sm:block'>How do we work?</span>
               </h1>
@@ -62,7 +66,7 @@ const Home = () => {
       {/*Expert*/}
       <div className='flex flex-col rounded-xl bg-expert_bgmobile bg-cover sm:bg-expert_bg m-[15px] sm:m-5 sm:h-[817px] items-center justify-center gap-[30px] sm:gap-[60px] py-10'>
           <div className='flex flex-col items-center pt-10 gap-[15px]'>
-            <h1 className='h-[66px] w-[209px] sm:h-[110px] sm:w-[334px] font-Noto text-center font-medium leading-[33px] sm:leading-[55px] text-[20px] sm:text-[32px]'>Got More Questions?Talk To Our Experts</h1>
+            <h1 className='h-[66px] w-[209px] sm:h-[110px] sm:w-[334px] font-Noto text-center font-medium leading-[33px] sm:leading-[55px] text-[20px] sm:text-[32px] text-[#151B4A]'>Got More Questions?Talk To Our Experts</h1>
             <h2 className='h-[88px] w-[276px] sm:h-[60px] sm:w-[634px] text-center font-normal leading-[22px] sm:leading-[30px] text-[16px] sm:text-[18px] text-[#4E516C] tracking-wide'>These programs work on applied neurological science. Our experts have curated each program with the knowledge </h2>
           </div>
           <div className='sm:h-[452px] rounded-[14px] sm:bg-[#FFFFFF] flex flex-col items-center justify-center gap-[20px] sm:gap-[50px] p-10'>
@@ -110,7 +114,55 @@ const Home = () => {
 
 
       {/*Plans and Packages*/}
-
+      <div className='hidden sm:flex flex-col gap-[50px] items-center justify-center'>
+        <div className='flex flex-col items-center justify-center gap-[15px]'>
+          <h1 className='w-[276px] h-[55px font-Noto font-medium text-[32px] leading-[55px] text-[#151B4A]'>Plans & Packages</h1>
+          <h2 className='w-[680px] h-[60px] font-normal text-[18px] leading-[30px] text-center text-[#4E516C]'>These programs work on applied neurological science. Our experts have curated each program with the knowledge</h2>
+        </div>
+        <div className='flex flex-col'>
+            <div class="grid grid-cols-4 gap-[17px] items-center justify-center">
+                <div class="flex flex-col bg-[#FFCC00] w-[270px] h-[128px] items-center justify-center">
+                    <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹5,200</p>
+                    <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 8 sessions per month</p>
+                </div>
+                <div class="flex flex-col bg-[#FFF9E1] w-[250px] h-[115px] items-center justify-center">
+                    <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹7,200</p>
+                    <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 12 sessions per month</p>
+                </div>
+                <div class="flex flex-col bg-[#FFF9E1] w-[250px] h-[115px] items-center justify-center">
+                    <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹14,400</p>
+                    <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 24 sessions per month</p>
+                </div>
+                <div class="flex flex-col bg-[#FFF9E1] w-[250px] h-[115px] items-center justify-center">
+                    <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹16,200</p>
+                    <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 36 sessions per month</p>
+                </div>
+            </div>
+            <div class="border-[1px] border-[#FFCC00] w-[1110px] p-[30px]">
+                <h2 class="font-semibold text-[20px] mb-[40px]">Program Package Includes</h2>
+                <div class="flex row items-top justify-between">
+                  <ul class="marker:text-[#EA5858] list-disc pl-[15px] space-y-[30px]">
+                      <li className='text-[#4E516C] font-normal text-[14px]'>Minimum 14 Therapy Sessions</li>
+                      <li className='text-[#4E516C] font-normal text-[14px]'>10% OFF on all the center services</li>
+                      <li className='text-[#4E516C] font-normal text-[14px]'>12 Resource Kits</li>
+                  </ul>
+                  <ul class="marker:text-[#EA5858] list-disc pl-[15px] space-y-[30px]">
+                      <li className='text-[#4E516C] font-normal text-[14px]'>Free Access To The Exclusive Webinars</li>
+                      <li className='text-[#4E516C] font-normal text-[14px]'>Access to community WhatsApp group</li>
+                      <li className='text-[#4E516C] font-normal text-[14px]'>2 Exclusive Expert Sessions Per Quarter</li>
+                  </ul>
+                  <ul class="marker:text-[#EA5858] list-disc pl-[15px] space-y-[30px]">
+                      <li className='text-[#4E516C] font-normal text-[14px]'>12 Counselling Sessions</li>
+                      <li className='text-[#4E516C] font-normal text-[14px]'>12 Q&A Sessions</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-[10px]'>
+          <Link to='/enroll' className=' font-semibold text-[15px] sm:text-[16px] bg-[#125E50] rounded-[60px] px-[15px] py-[6px] sm:px-[30px] sm:py-[10px] text-[#FFF] hover:bg-[#187767]'>Enroll now</Link>
+          <h6 className='w-[171px] h-[24px] text-[#4E516C] font-normal text-[14px] leading-[24px]'>Get 2 Week Free Access</h6>
+        </div>
+      </div>
 
       {/*Footer*/}
       <div className='flex flex-col rounded-xl gap:[20px] sm:gap-[35px] m-[15px] p-[40px] sm:p-[50px] bg-footer_bgmobile sm:bg-footer_bg bg-cover justify-center sm:justify-start'>
