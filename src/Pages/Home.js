@@ -1,6 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Card from '../Components/Card';
+import { FaFacebook} from 'react-icons/fa';
+import { AiFillTwitterCircle, AiFillInstagram } from 'react-icons/ai';
+import { Footer_Comapny_Link, Footer_Resources_Link } from '../data';
 
 const Home = () => {
 
@@ -13,7 +16,7 @@ const Home = () => {
   return (
       <div className='flex flex-col gap-[100px]'>
       {/*Hero Section*/}
-        <div className='flex flex-col items-center justify-center gap-7 h-[759px] bg-[#FFF6CC]'>
+        <div className='flex flex-col items-center justify-center gap-7 h-[759px] bg-hero_bgmobile sm:bg-hero_bg bg-cover sm:bg-contain bg-no-repeat'>
           <img src='/Assets/illustration1.svg' alt='' className='hidden sm:block absolute top-32 left-[300px]'></img>
           <img src='/Assets/illustration2.svg' alt='' className='hidden sm:block absolute top-32 right-[300px]'></img>
           <h1 className='font-Noto font-medium text-[25px] sm:text-[40px] leading-[35px] sm:leading-[60px]  h-[105px] w-[270px] sm:h-[120px] sm:w-[608px] text-center text-[#151B4A]'>We Empower Mom's Beliefs & Enable Childs's <span className='relative inline-block'>Growth.<img src='/Assets/underline.svg' alt='' className='absolute bottom-[-5px] left-0 right-0 w-full h-auto'></img></span></h1>
@@ -23,8 +26,8 @@ const Home = () => {
         </div>
 
       {/*Programs*/}
-        <div className='flex flex-col gap-[45px] items-center justify-center bg-[#E4F7F3]'>
-          <div className='flex flex-col gap-[15px] items-center justify-center'>
+        <div className='flex flex-col gap-[45px]  sm:h-[944px] items-center justify-center m-[15px] sm:m-5 bg-program_bgmobile sm:bg-program_bg bg-cover pt-[100px] pb-[80px]'>
+          <div className='flex flex-col gap-[15px] items-center justify-center pt-5 sm:pt-0'>
             <h1 className='font-Noto font-medium text-[20px] sm:text-[32px] leading-[33px] sm:leading-[55px]  h-[66px] w-[293.11px] sm:h-[58.28px] sm:w-[633px] text-center text-[#151B4A]'>Customisable Expert <span className='relative inline-block'>Curated<img src='/Assets/underline.svg' alt='' className='absolute bottom-[-5px] left-0 right-0 w-full h-auto'></img></span> Programs</h1>
             <h2 className='hidden sm:block font-normal text-[18px] leading-[27px] text-[#4E516C] h-[54px] w-[766px] text-center m-0 tracking-wide'>These programs work on applied neurological science. Our experts have curated each program with the knowledge and insights from decades of experience.</h2>
           </div>
@@ -41,7 +44,7 @@ const Home = () => {
         </div>
 
       {/*How do we work*/}
-        <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center justify-center gap-[70px]'>
             <div className='flex flex-col items-center justify-center gap-[15px]'>
               <h1 className='font-Noto font-medium text-[20px] sm:text-[32px] leading-[50px] w-[136px] h-[33px] sm:w-[309px] sm:h-[50px] text-center'>
                 <span className='block sm:hidden'>Who are we?</span>
@@ -49,11 +52,12 @@ const Home = () => {
               </h1>
               <h2 className='font-normal text-base sm:text-lg sm:leading-[25px] leading-[27px] w-[303px] h-[125px] sm:w-[705px] sm:h-[54px] text-center text-[#4E516C]'> Mom’s Belief is an innovation and research-driven holistic care provider for children with Special Needs and operates through a Home-Based Program.</h2>
             </div>
+            <img src='/Assets/work.svg' alt=''></img>
         </div>
 
       {/*Expert*/}
-      <div className='flex flex-col bg-[#E4F7F3] h-[857px] sm:h-[817px] items-center justify-center gap-[30px] sm:gap-[60px]'>
-          <div className='flex flex-col items-center gap-[15px]'>
+      <div className='flex flex-col bg-expert_bgmobile bg-cover sm:bg-expert_bg m-[15px] sm:m-5 sm:h-[817px] items-center justify-center gap-[30px] sm:gap-[60px] py-10'>
+          <div className='flex flex-col items-center pt-10 gap-[15px]'>
             <h1 className='h-[66px] w-[209px] sm:h-[110px] sm:w-[334px] font-Noto text-center font-medium leading-[33px] sm:leading-[55px] text-[20px] sm:text-[32px]'>Got More Questions?Talk To Our Experts</h1>
             <h2 className='h-[88px] w-[276px] sm:h-[60px] sm:w-[634px] text-center font-normal leading-[22px] sm:leading-[30px] text-[16px] sm:text-[18px] text-[#4E516C] tracking-wide'>These programs work on applied neurological science. Our experts have curated each program with the knowledge </h2>
           </div>
@@ -99,8 +103,70 @@ const Home = () => {
               </div>
           </div>
       </div>
+
+
       {/*Plans and Packages*/}
+
+
       {/*Footer*/}
+      <div className='flex flex-col gap-[35px] m-[15px] h-[488.5px] p-[50px] bg-footer_bgmobile sm:bg-footer_bg bg-cover'>
+        <div className='flex row gap-[50px] mt-8'>
+          <div className='flex flex-col gap-[50px]'>
+              <img src='/Assets/logo.svg' alt='logo' className='h-[36px] w-[155px]'></img>
+              <div className='flex flex-col gap-[30px]'>
+                <div className='flex flex-col gap-[15px]'>
+                  <h3 className='h-[24px] w-[186px] font-semibold text-[20px] leading-6 text-[#151B4A]'>Let’s stay in touch</h3>
+                  <h4 className='h-[96px] w-[393px] font-normal text-[16px] leading-6 text-[#4E516C] tracking-wide'>Be it your child’s academic issues, teenage troubles, developmental queries, their future concerns, your relationship with them, or your own mental peace as a parent.</h4>
+                </div>
+                <div className='flex row gap-[15px]'>
+                <FaFacebook className='h-[23px] w-[23px] text-[#151B4A]'/>
+                <AiFillTwitterCircle className='h-[23px] w-[23px] text-[#151B4A]'/>
+                <AiFillInstagram className='h-[23px] w-[23px] text-[#151B4A]'/>
+              </div>
+              </div>
+              
+          </div>
+          <div className='flex row h-[276px] w-[420px] justify-between'>
+            <div className='flex flex-col justify-between'>
+              <h6 className='font-semibold text-base leading-6 text-[#151B4A]'>Company</h6>
+                {Footer_Comapny_Link.map(({name, path}, index) =>{
+                    return(
+                        <NavLink to={path}>
+                          <div className="w-fit">
+                            <h3 className='relative font-normal text-[16px] leading-[27px] text-[#4E516C] group'>{name}
+                            <span className='absolute left-0 bottom-1 w-full h-[1px] bg-[#4E516C] opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100'></span>
+                            </h3>
+                          </div>
+                        </NavLink>
+                    )
+                  })}
+            </div>
+            <div className='flex flex-col justify-between'>
+                <h6 className='font-semibold text-base leading-6 text-[#151B4A]'>Resources</h6>
+                {Footer_Resources_Link.map(({name, path}, index) =>{
+                    return(
+                        <NavLink to={path}>
+                          <div className="w-fit">
+                            <h3 className='font-normal relative text-[16px] leading-[27px] text-[#4E516C] group'>{name}
+                            <span className='absolute left-0 bottom-1 w-full h-[1px] bg-[#4E516C] opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100'></span>
+                            </h3>
+                            
+                          </div>
+                        </NavLink>
+                    )
+                  })}
+            </div>
+          </div>
+        </div>
+        <div className='relative mt-6'>
+          <img src='/Assets/footerImage.svg' alt='footer' className='absolute right-0 bottom-0'></img>
+          <hr className="border-[#4E516C/13]"/>
+        </div>
+        <div className='flex items-center justify-center'>
+          <h1 className='font-normal text-[14px] leading-6 tracking-wide text-[#4E516C]'>Copyright © 2022 Mom’s Belief. A unit of Rays of Belief Pvt Ltd.</h1>
+        </div>
+      </div>
+
       </div>
   );
 }
