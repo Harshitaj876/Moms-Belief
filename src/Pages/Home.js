@@ -220,16 +220,6 @@ const Home = () => {
             </div>
           </div>
 
-
-
-
-
-
-
-
-
-
-
           <div className="flex row gap-[50px] items-center justify-center mt-[40px] mb-[20px] sm:hidden">
       <div>
         <button
@@ -327,25 +317,7 @@ const Home = () => {
           </div>
         )}
       </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          </div>
           <div className='relative mt-6'>
             <img src='/Assets/footerImage.svg' alt='footer' className='absolute right-0 bottom-0 h-[47.5px] w-[55.81px] sm:h-[144.52px] sm:w-[169.78px]'></img>
             <hr className="border-[#4E516C/13]"/>
