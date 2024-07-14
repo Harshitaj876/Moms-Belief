@@ -9,6 +9,7 @@ import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
 import Calllang from './Components/Call_lang';
 import NavBar from './Components/NavBar';
+import BottomNavBar from './Components/BottomNavBar';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/login' element ={<Login/>}/>
           <Route path='/signup' element ={<SignUp/>}/>
         </Routes>
+        <BottomNavBar/>
       </BrowserRouter>
     </div>
   );
