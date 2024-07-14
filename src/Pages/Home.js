@@ -167,7 +167,7 @@ const Home = () => {
           <hr className="border-[#4E516C/13]"/>
         </div>
         <div className='flex items-center justify-center'>
-          <h1 className='font-normal text-[9px] sm:text-[14px] leading-6 tracking-wide text-[#4E516C]'>Copyright © 2022 Mom’s Belief. A unit of Rays of Belief Pvt Ltd.</h1>
+          <h1 className='font-normal text-[8px] sm:text-[14px] leading-6 tracking-wide text-[#4E516C]'>Copyright © 2022 Mom’s Belief. A unit of Rays of Belief Pvt Ltd.</h1>
         </div>
       </div>
 
