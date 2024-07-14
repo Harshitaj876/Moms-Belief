@@ -113,7 +113,7 @@ const Home = () => {
 
 
       {/*Footer*/}
-      <div className='flex flex-col rounded-xl gap:[20px] sm:gap-[35px] m-[15px] p-[50px] bg-footer_bgmobile sm:bg-footer_bg bg-cover justify-center sm:justify-start'>
+      <div className='flex flex-col rounded-xl gap:[20px] sm:gap-[35px] m-[15px] p-[40px] sm:p-[50px] bg-footer_bgmobile sm:bg-footer_bg bg-cover justify-center sm:justify-start'>
         <div className='flex row gap-[50px] mt-8 items-center justify-center sm:items-start sm:justify-start'>
         <div className='flex flex-col items-center sm:items-start gap-[15px] sm:gap-[50px]'>
           <img src='/Assets/logo.svg' alt='logo' className='h-[23.97px] w-[103.22px] sm:h-[36px] sm:w-[155px]'></img>
