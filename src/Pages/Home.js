@@ -4,6 +4,7 @@ import Card from '../Components/Card';
 import { FaFacebook} from 'react-icons/fa';
 import { AiFillTwitterCircle, AiFillInstagram } from 'react-icons/ai';
 import { Footer_Comapny_Link, Footer_Resources_Link } from '../data';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const Home = () => {
   const [isCompanyOpen, setIsCompanyOpen] = useState(false);
@@ -230,110 +231,103 @@ const Home = () => {
 
 
           <div className="flex row gap-[50px] items-center justify-center mt-[40px] mb-[20px] sm:hidden">
-            <div>
-              <button type="button" className="flex row items-center justify-center text-[#151B4A] font-semibold text-[15px]"
-                id="company-menu"
-                aria-expanded="true"
-                aria-haspopup="true"
-                onClick={() => {
-                  setIsCompanyOpen(!isCompanyOpen);
-                  setIsResourcesOpen(false);
-                }}>Company
-                <svg
-                  className="-mr-1 ml-2 h-5 w-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true">
-                  <path
-                    fillRule="evenodd"
-                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.586l3.71-4.354a.75.75 0 111.08 1.04l-4.25 5a.75.75 0 01-1.08 0l-4.25-5a.75.75 0 01.02-1.06z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-              {isCompanyOpen && (
-                <div
-                  className="origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="company-menu"
-                >
-                  <div className="py-1" role="none">
-                    <a href="#home" className="block text-right px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
-                      Home
-                    </a>
-                    <a href="#about-us" className="block text-right px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
-                      About Us
-                    </a>
-                    <a href="#contact-us" className="block text-right px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
-                      Contact Us
-                    </a>
-                  </div>
-                </div>
-              )}
-            </div>
-            <div>
-              <button
-                type="button"
-                className="flex row items-center justify-center text-[#151B4A] font-semibold text-[15px]"
-                id="resources-menu"
-                aria-expanded="true"
-                aria-haspopup="true"
-                onClick={() => {
-                  setIsResourcesOpen(!isResourcesOpen);
-                  setIsCompanyOpen(false);
-                }}
+      <div>
+        <button
+          type="button"
+          className="flex row items-center justify-center text-[#151B4A] font-semibold text-[15px]"
+          id="company-menu"
+          aria-expanded="true"
+          aria-haspopup="true"
+          onClick={() => {
+            setIsCompanyOpen(!isCompanyOpen);
+            setIsResourcesOpen(false);
+          }}
+        >
+          Company
+          {isCompanyOpen ? <FaChevronUp className="-mr-1 ml-2 h-4 w-4" /> : <FaChevronDown className="-mr-1 ml-2 h-4 w-4" />}
+        </button>
+        {isCompanyOpen && (
+          <div
+            className="origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="company-menu"
+          >
+            <div className="py-1" role="none">
+              <a
+                href="#home"
+                className="block text-right px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
               >
-                Resources
-                <svg
-                  className="-mr-1 ml-2 h-5 w-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.586l3.71-4.354a.75.75 0 111.08 1.04l-4.25 5a.75.75 0 01-1.08 0l-4.25-5a.75.75 0 01.02-1.06z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-              {isResourcesOpen && (
-                <div
-                  className="z-20 origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="resources-menu"
-                >
-                  <div className="py-1" role="none">
-                    <a
-                      href="#resource1"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                      role="menuitem"
-                    >
-                      Resource 1
-                    </a>
-                    <a
-                      href="#resource2"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                      role="menuitem"
-                    >
-                      Resource 2
-                    </a>
-                    <a
-                      href="#resource3"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                      role="menuitem"
-                    >
-                      Resource 3
-                    </a>
-                  </div>
-                </div>
-              )}
+                Home
+              </a>
+              <a
+                href="#about-us"
+                className="block text-right px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+              >
+                About Us
+              </a>
+              <a
+                href="#contact-us"
+                className="block text-right px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+              >
+                Contact Us
+              </a>
             </div>
           </div>
+        )}
+      </div>
+      <div>
+        <button
+          type="button"
+          className="flex row items-center justify-center text-[#151B4A] font-semibold text-[15px]"
+          id="resources-menu"
+          aria-expanded="true"
+          aria-haspopup="true"
+          onClick={() => {
+            setIsResourcesOpen(!isResourcesOpen);
+            setIsCompanyOpen(false);
+          }}
+        >
+          Resources
+          {isResourcesOpen ? <FaChevronUp className="-mr-1 ml-2 h-4 w-4" /> : <FaChevronDown className="-mr-1 ml-2 h-4 w-4" />}
+        </button>
+        {isResourcesOpen && (
+          <div
+            className="z-20 origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="resources-menu"
+          >
+            <div className="py-1" role="none">
+              <a
+                href="#resource1"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+              >
+                Resource 1
+              </a>
+              <a
+                href="#resource2"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+              >
+                Resource 2
+              </a>
+              <a
+                href="#resource3"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+              >
+                Resource 3
+              </a>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
 
 
 
