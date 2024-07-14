@@ -66,164 +66,164 @@ const Home = () => {
         </div>
 
       {/*Expert*/}
-      <div className='flex flex-col rounded-xl bg-expert_bgmobile bg-cover sm:bg-expert_bg m-[15px] sm:m-5 sm:h-[817px] items-center justify-center gap-[30px] sm:gap-[60px] py-10'>
-          <div className='flex flex-col items-center pt-10 gap-[15px]'>
-            <h1 className='h-[66px] w-[209px] sm:h-[110px] sm:w-[334px] font-Noto text-center font-medium leading-[33px] sm:leading-[55px] text-[20px] sm:text-[32px] text-[#151B4A]'>Got More Questions?Talk To Our Experts</h1>
-            <h2 className='h-[88px] w-[276px] sm:h-[60px] sm:w-[634px] text-center font-normal leading-[22px] sm:leading-[30px] text-[16px] sm:text-[18px] text-[#4E516C] tracking-wide'>These programs work on applied neurological science. Our experts have curated each program with the knowledge </h2>
-          </div>
-          <div className='sm:h-[452px] rounded-[14px] sm:bg-[#FFFFFF] flex flex-col items-center justify-center gap-[20px] sm:gap-[50px] p-10'>
-              <h1 className='font-semibold text-[18px] sm:text-xl leading-[27px] tracking-wide h-[54px] w-[207px] sm:h-[27px] sm:w-[374px] text-[#151B4A] text-center'>Find the best program for your child</h1>
-              <form className='flex flex-col items-center justify-center'>
-                <div className='grid grid-cols-1 sm:grid-cols-3 gap-5'>
-                  <div className='flex flex-col'>
-                    <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Your Name</label>
-                    <input type='text' placeholder='Enter your name' className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+        <div className='flex flex-col rounded-xl bg-expert_bgmobile bg-cover sm:bg-expert_bg m-[15px] sm:m-5 sm:h-[817px] items-center justify-center gap-[30px] sm:gap-[60px] py-10'>
+            <div className='flex flex-col items-center pt-10 gap-[15px]'>
+              <h1 className='h-[66px] w-[209px] sm:h-[110px] sm:w-[334px] font-Noto text-center font-medium leading-[33px] sm:leading-[55px] text-[20px] sm:text-[32px] text-[#151B4A]'>Got More Questions?Talk To Our Experts</h1>
+              <h2 className='h-[88px] w-[276px] sm:h-[60px] sm:w-[634px] text-center font-normal leading-[22px] sm:leading-[30px] text-[16px] sm:text-[18px] text-[#4E516C] tracking-wide'>These programs work on applied neurological science. Our experts have curated each program with the knowledge </h2>
+            </div>
+            <div className='sm:h-[452px] rounded-[14px] sm:bg-[#FFFFFF] flex flex-col items-center justify-center gap-[20px] sm:gap-[50px] p-10'>
+                <h1 className='font-semibold text-[18px] sm:text-xl leading-[27px] tracking-wide h-[54px] w-[207px] sm:h-[27px] sm:w-[374px] text-[#151B4A] text-center'>Find the best program for your child</h1>
+                <form className='flex flex-col items-center justify-center'>
+                  <div className='grid grid-cols-1 sm:grid-cols-3 gap-5'>
+                    <div className='flex flex-col'>
+                      <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Your Name</label>
+                      <input type='text' placeholder='Enter your name' className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                    </div>
+                    <div className='flex flex-col'>
+                      <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Your Child's Name</label>
+                      <input type='text' placeholder="Enter your Child's name" className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                    </div>
+                    <div className='flex flex-col'>
+                      <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Child's Age</label>
+                      <input type='number' placeholder="Enter Child's age" className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                    </div>
                   </div>
-                  <div className='flex flex-col'>
-                    <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Your Child's Name</label>
-                    <input type='text' placeholder="Enter your Child's name" className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
-                  </div>
-                  <div className='flex flex-col'>
-                    <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Child's Age</label>
-                    <input type='number' placeholder="Enter Child's age" className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[301px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
-                  </div>
-                </div>
 
-                <div className='flex flex-col sm:flex-row mt-[22px] gap-5  '>
-                  <div className='flex flex-col'>
-                    <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>E-mail id</label>
-                    <input type='email' placeholder='Enter email id' className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[622px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                  <div className='flex flex-col sm:flex-row mt-[22px] gap-5  '>
+                    <div className='flex flex-col'>
+                      <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>E-mail id</label>
+                      <input type='email' placeholder='Enter email id' className='text-[#4E516C] h-[40px] w-[311px] sm:h-[45px] sm:w-[622px] rounded-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                    </div>
+                    <div className='flex flex-col'>
+                      <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Mobile Number</label>
+                      <div className='flex items-center'>
+                        <select className='h-[45px] w-[63px] rounded-l-[5px] text-[#4E516C] border-[1px] border-[#CAC5C5] p-[5px] flex items-center justify-center'>
+                          <option value="+1">+1</option>
+                          <option value="+91">+91</option>
+                          <option value="+44">+44</option>
+                        </select>
+                        <input type='tel' placeholder='Enter mobile no.' className='text-[#4E516C] h-[45px] w-full rounded-r-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
+                    </div>
+                    </div>
                   </div>
-                  <div className='flex flex-col'>
-                    <label className='h-[17px] font-semibold text-[14px] leading-[16.94px] tracking-wide text-[#4E516C] mb-[10px]'>Mobile Number</label>
-                    <div className='flex items-center'>
-                      <select className='h-[45px] w-[63px] rounded-l-[5px] text-[#4E516C] border-[1px] border-[#CAC5C5] p-[5px] flex items-center justify-center'>
-                        <option value="+1">+1</option>
-                        <option value="+91">+91</option>
-                        <option value="+44">+44</option>
-                      </select>
-                      <input type='tel' placeholder='Enter mobile no.' className='text-[#4E516C] h-[45px] w-full rounded-r-[5px] border-[1px] border-[#CAC5C5] pl-[10px]' />
-                  </div>
-                  </div>
+                </form>
+                <div className='flex flex-col gap-[10px] items-center'>
+                  <button to='/signup' className='font-semibold text-[15px] sm:text-[16px] bg-[#125E50] rounded-[60px] px-[30px] py-[10px] text-[#FFF] hover:bg-[#187767]'>Request a call</button>
+                  <h3 className='w-[189px] h-[48px] sm:w-[307px] sm:h-[24px] font-normal text-[14px] leading-6 text-[#4E516C] text-center'>We’ll keep your information private & secure</h3>
                 </div>
-              </form>
-              <div className='flex flex-col gap-[10px] items-center'>
-                <button to='/signup' className='font-semibold text-[15px] sm:text-[16px] bg-[#125E50] rounded-[60px] px-[30px] py-[10px] text-[#FFF] hover:bg-[#187767]'>Request a call</button>
-                <h3 className='w-[189px] h-[48px] sm:w-[307px] sm:h-[24px] font-normal text-[14px] leading-6 text-[#4E516C] text-center'>We’ll keep your information private & secure</h3>
-              </div>
-          </div>
-      </div>
+            </div>
+        </div>
 
 
       {/*Plans and Packages*/}
-      <div className='hidden sm:flex flex-col gap-[50px] items-center justify-center'>
-        <div className='flex flex-col items-center justify-center gap-[15px]'>
-          <h1 className='w-[276px] h-[55px font-Noto font-medium text-[32px] leading-[55px] text-[#151B4A]'>Plans & Packages</h1>
-          <h2 className='w-[680px] h-[60px] font-normal text-[18px] leading-[30px] text-center text-[#4E516C]'>These programs work on applied neurological science. Our experts have curated each program with the knowledge</h2>
+        <div className='hidden sm:flex flex-col gap-[50px] items-center justify-center'>
+          <div className='flex flex-col items-center justify-center gap-[15px]'>
+            <h1 className='w-[276px] h-[55px font-Noto font-medium text-[32px] leading-[55px] text-[#151B4A]'>Plans & Packages</h1>
+            <h2 className='w-[680px] h-[60px] font-normal text-[18px] leading-[30px] text-center text-[#4E516C]'>These programs work on applied neurological science. Our experts have curated each program with the knowledge</h2>
+          </div>
+          <div className='flex flex-col'>
+              <div class="grid grid-cols-4 gap-[17px] items-center justify-center">
+                  <div class="flex flex-col bg-[#FFCC00] w-[270px] h-[128px] items-center justify-center">
+                      <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹5,200</p>
+                      <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 8 sessions per month</p>
+                  </div>
+                  <div class="flex flex-col bg-[#FFF9E1] w-[250px] h-[115px] items-center justify-center">
+                      <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹7,200</p>
+                      <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 12 sessions per month</p>
+                  </div>
+                  <div class="flex flex-col bg-[#FFF9E1] w-[250px] h-[115px] items-center justify-center">
+                      <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹14,400</p>
+                      <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 24 sessions per month</p>
+                  </div>
+                  <div class="flex flex-col bg-[#FFF9E1] w-[250px] h-[115px] items-center justify-center">
+                      <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹16,200</p>
+                      <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 36 sessions per month</p>
+                  </div>
+              </div>
+              <div class="border-[1px] border-[#FFCC00] w-[1110px] p-[30px]">
+                  <h2 class="font-semibold text-[20px] mb-[40px]">Program Package Includes</h2>
+                  <div class="flex row items-top justify-between">
+                    <ul class="marker:text-[#EA5858] list-disc pl-[15px] space-y-[30px]">
+                        <li className='text-[#4E516C] font-normal text-[14px]'>Minimum 14 Therapy Sessions</li>
+                        <li className='text-[#4E516C] font-normal text-[14px]'>10% OFF on all the center services</li>
+                        <li className='text-[#4E516C] font-normal text-[14px]'>12 Resource Kits</li>
+                    </ul>
+                    <ul class="marker:text-[#EA5858] list-disc pl-[15px] space-y-[30px]">
+                        <li className='text-[#4E516C] font-normal text-[14px]'>Free Access To The Exclusive Webinars</li>
+                        <li className='text-[#4E516C] font-normal text-[14px]'>Access to community WhatsApp group</li>
+                        <li className='text-[#4E516C] font-normal text-[14px]'>2 Exclusive Expert Sessions Per Quarter</li>
+                    </ul>
+                    <ul class="marker:text-[#EA5858] list-disc pl-[15px] space-y-[30px]">
+                        <li className='text-[#4E516C] font-normal text-[14px]'>12 Counselling Sessions</li>
+                        <li className='text-[#4E516C] font-normal text-[14px]'>12 Q&A Sessions</li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+          <div className='flex flex-col items-center justify-center gap-[10px]'>
+            <Link to='/enroll' className=' font-semibold text-[15px] sm:text-[16px] bg-[#125E50] rounded-[60px] px-[15px] py-[6px] sm:px-[30px] sm:py-[10px] text-[#FFF] hover:bg-[#187767]'>Enroll now</Link>
+            <h6 className='w-[171px] h-[24px] text-[#4E516C] font-normal text-[14px] leading-[24px]'>Get 2 Week Free Access</h6>
+          </div>
         </div>
-        <div className='flex flex-col'>
-            <div class="grid grid-cols-4 gap-[17px] items-center justify-center">
-                <div class="flex flex-col bg-[#FFCC00] w-[270px] h-[128px] items-center justify-center">
-                    <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹5,200</p>
-                    <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 8 sessions per month</p>
-                </div>
-                <div class="flex flex-col bg-[#FFF9E1] w-[250px] h-[115px] items-center justify-center">
-                    <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹7,200</p>
-                    <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 12 sessions per month</p>
-                </div>
-                <div class="flex flex-col bg-[#FFF9E1] w-[250px] h-[115px] items-center justify-center">
-                    <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹14,400</p>
-                    <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 24 sessions per month</p>
-                </div>
-                <div class="flex flex-col bg-[#FFF9E1] w-[250px] h-[115px] items-center justify-center">
-                    <p class="font-semibold w-[109px] h-9 text-[30px] text-[#151B4A]">₹16,200</p>
-                    <p class="mt-[15px] h-[19px] w-[205px] font-normal text-[16px] text-[#151B4A]">for 36 sessions per month</p>
-                </div>
-            </div>
-            <div class="border-[1px] border-[#FFCC00] w-[1110px] p-[30px]">
-                <h2 class="font-semibold text-[20px] mb-[40px]">Program Package Includes</h2>
-                <div class="flex row items-top justify-between">
-                  <ul class="marker:text-[#EA5858] list-disc pl-[15px] space-y-[30px]">
-                      <li className='text-[#4E516C] font-normal text-[14px]'>Minimum 14 Therapy Sessions</li>
-                      <li className='text-[#4E516C] font-normal text-[14px]'>10% OFF on all the center services</li>
-                      <li className='text-[#4E516C] font-normal text-[14px]'>12 Resource Kits</li>
-                  </ul>
-                  <ul class="marker:text-[#EA5858] list-disc pl-[15px] space-y-[30px]">
-                      <li className='text-[#4E516C] font-normal text-[14px]'>Free Access To The Exclusive Webinars</li>
-                      <li className='text-[#4E516C] font-normal text-[14px]'>Access to community WhatsApp group</li>
-                      <li className='text-[#4E516C] font-normal text-[14px]'>2 Exclusive Expert Sessions Per Quarter</li>
-                  </ul>
-                  <ul class="marker:text-[#EA5858] list-disc pl-[15px] space-y-[30px]">
-                      <li className='text-[#4E516C] font-normal text-[14px]'>12 Counselling Sessions</li>
-                      <li className='text-[#4E516C] font-normal text-[14px]'>12 Q&A Sessions</li>
-                  </ul>
-                </div>
-            </div>
-        </div>
-        <div className='flex flex-col items-center justify-center gap-[10px]'>
-          <Link to='/enroll' className=' font-semibold text-[15px] sm:text-[16px] bg-[#125E50] rounded-[60px] px-[15px] py-[6px] sm:px-[30px] sm:py-[10px] text-[#FFF] hover:bg-[#187767]'>Enroll now</Link>
-          <h6 className='w-[171px] h-[24px] text-[#4E516C] font-normal text-[14px] leading-[24px]'>Get 2 Week Free Access</h6>
-        </div>
-      </div>
 
       {/*Footer*/}
-      <div className='flex flex-col rounded-xl gap:[20px] sm:gap-[35px] m-[15px] p-[40px] sm:p-[50px] bg-footer_bgmobile sm:bg-footer_bg bg-cover justify-center sm:justify-start'>
-        <div className='flex row gap-[50px] mt-8 items-center justify-center sm:items-start sm:justify-start'>
-        <div className='flex flex-col items-center sm:items-start gap-[15px] sm:gap-[50px]'>
-          <img src='/Assets/logo.svg' alt='logo' className='h-[23.97px] w-[103.22px] sm:h-[36px] sm:w-[155px]'></img>
-          <div className='flex flex-col gap-[40px] sm:gap-[30px]'>
-            <div className='flex flex-col gap-[15px]'>
-              <h3 className='h-[14px]  sm:h-[24px] sm:w-[186px] font-semibold text-[20px] leading-6 text-[#151B4A] text-center sm:text-left'>Let’s stay in touch</h3>
-              <h4 className='w-[293px] h-[96px] sm:w-[393px] font-normal text-[16px] leading-6 text-[#4E516C] tracking-wide text-center sm:text-left'>Be it your child’s academic issues, teenage troubles, developmental queries, their future concerns, your relationship with them, or your own mental peace as a parent.</h4>
-            </div>
-            <div className='flex gap-[15px] items-center justify-center sm:items-start sm:justify-start'>
-              <FaFacebook className='h-[19px] w-[19px] sm:h-[23px] sm:w-[23px] text-[#151B4A]'/>
-              <AiFillTwitterCircle className='h-[19px] w-[19px] sm:h-[23px] sm:w-[23px] text-[#151B4A]'/>
-              <AiFillInstagram className='h-[19px] w-[19px] sm:h-[23px] sm:w-[23px] text-[#151B4A]'/>
+        <div className='flex flex-col rounded-xl gap:[20px] sm:gap-[35px] m-[15px] p-[40px] sm:p-[50px] bg-footer_bgmobile sm:bg-footer_bg bg-cover justify-center sm:justify-start'>
+          <div className='flex row gap-[50px] mt-8 items-center justify-center sm:items-start sm:justify-start'>
+          <div className='flex flex-col items-center sm:items-start gap-[15px] sm:gap-[50px]'>
+            <img src='/Assets/logo.svg' alt='logo' className='h-[23.97px] w-[103.22px] sm:h-[36px] sm:w-[155px]'></img>
+            <div className='flex flex-col gap-[40px] sm:gap-[30px]'>
+              <div className='flex flex-col gap-[15px]'>
+                <h3 className='h-[14px]  sm:h-[24px] sm:w-[186px] font-semibold text-[20px] leading-6 text-[#151B4A] text-center sm:text-left'>Let’s stay in touch</h3>
+                <h4 className='w-[293px] h-[96px] sm:w-[393px] font-normal text-[16px] leading-6 text-[#4E516C] tracking-wide text-center sm:text-left'>Be it your child’s academic issues, teenage troubles, developmental queries, their future concerns, your relationship with them, or your own mental peace as a parent.</h4>
+              </div>
+              <div className='flex gap-[15px] items-center justify-center sm:items-start sm:justify-start'>
+                <FaFacebook className='h-[19px] w-[19px] sm:h-[23px] sm:w-[23px] text-[#151B4A]'/>
+                <AiFillTwitterCircle className='h-[19px] w-[19px] sm:h-[23px] sm:w-[23px] text-[#151B4A]'/>
+                <AiFillInstagram className='h-[19px] w-[19px] sm:h-[23px] sm:w-[23px] text-[#151B4A]'/>
+              </div>
             </div>
           </div>
-        </div>
 
-          <div className='hidden sm:flex row h-[276px] w-[420px] justify-between'>
-            <div className='flex flex-col justify-between'>
-              <h6 className='font-semibold text-base leading-6 text-[#151B4A]'>Company</h6>
-                {Footer_Comapny_Link.map(({name, path}, index) =>{
-                    return(
-                        <NavLink to={path}>
-                          <div className="w-fit">
-                            <h3 className='relative font-normal text-[16px] leading-[27px] text-[#4E516C] group'>{name}
-                            <span className='absolute left-0 bottom-1 w-full h-[1px] bg-[#4E516C] opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100'></span>
-                            </h3>
-                          </div>
-                        </NavLink>
-                    )
-                  })}
-            </div>
-            <div className='flex flex-col justify-between'>
-                <h6 className='font-semibold text-base leading-6 text-[#151B4A]'>Resources</h6>
-                {Footer_Resources_Link.map(({name, path}, index) =>{
-                    return(
-                        <NavLink to={path}>
-                          <div className="w-fit">
-                            <h3 className='font-normal relative text-[16px] leading-[27px] text-[#4E516C] group'>{name}
-                            <span className='absolute left-0 bottom-1 w-full h-[1px] bg-[#4E516C] opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100'></span>
-                            </h3>
-                            
-                          </div>
-                        </NavLink>
-                    )
-                  })}
+            <div className='hidden sm:flex row h-[276px] w-[420px] justify-between'>
+              <div className='flex flex-col justify-between'>
+                <h6 className='font-semibold text-base leading-6 text-[#151B4A]'>Company</h6>
+                  {Footer_Comapny_Link.map(({name, path}, index) =>{
+                      return(
+                          <NavLink to={path}>
+                            <div className="w-fit">
+                              <h3 className='relative font-normal text-[16px] leading-[27px] text-[#4E516C] group'>{name}
+                              <span className='absolute left-0 bottom-1 w-full h-[1px] bg-[#4E516C] opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100'></span>
+                              </h3>
+                            </div>
+                          </NavLink>
+                      )
+                    })}
+              </div>
+              <div className='flex flex-col justify-between'>
+                  <h6 className='font-semibold text-base leading-6 text-[#151B4A]'>Resources</h6>
+                  {Footer_Resources_Link.map(({name, path}, index) =>{
+                      return(
+                          <NavLink to={path}>
+                            <div className="w-fit">
+                              <h3 className='font-normal relative text-[16px] leading-[27px] text-[#4E516C] group'>{name}
+                              <span className='absolute left-0 bottom-1 w-full h-[1px] bg-[#4E516C] opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100'></span>
+                              </h3>
+                              
+                            </div>
+                          </NavLink>
+                      )
+                    })}
+              </div>
             </div>
           </div>
+          <div className='relative mt-6'>
+            <img src='/Assets/footerImage.svg' alt='footer' className='absolute right-0 bottom-0 h-[47.5px] w-[55.81px] sm:h-[144.52px] sm:w-[169.78px]'></img>
+            <hr className="border-[#4E516C/13]"/>
+          </div>
+          <div className='flex items-center justify-center'>
+            <h1 className='font-normal text-[8px] sm:text-[14px] leading-6 tracking-wide text-[#4E516C]'>Copyright © 2022 Mom’s Belief. A unit of Rays of Belief Pvt Ltd.</h1>
+          </div>
         </div>
-        <div className='relative mt-6'>
-          <img src='/Assets/footerImage.svg' alt='footer' className='absolute right-0 bottom-0 h-[47.5px] w-[55.81px] sm:h-[144.52px] sm:w-[169.78px]'></img>
-          <hr className="border-[#4E516C/13]"/>
-        </div>
-        <div className='flex items-center justify-center'>
-          <h1 className='font-normal text-[8px] sm:text-[14px] leading-6 tracking-wide text-[#4E516C]'>Copyright © 2022 Mom’s Belief. A unit of Rays of Belief Pvt Ltd.</h1>
-        </div>
-      </div>
 
       </div>
   );
